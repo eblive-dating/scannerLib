@@ -46,7 +46,7 @@ import java.io.File
 import java.io.FileNotFoundException
 
 
-internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
+public class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
 
     companion object {
         private val TAG = CameraScreenFragment::class.simpleName
@@ -95,6 +95,7 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
         scanSurfaceView.listener = this
         scanSurfaceView.originalImageFile = getScanActivity().originalImageFile
 
+
         checkForCameraPermissions()
         initListeners()
     }
@@ -112,7 +113,7 @@ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
         scanSurfaceView.originalImageFile = getScanActivity().originalImageFile
     }
 
-    private fun initListeners() {
+    public fun initListeners() {
         cameraCaptureButton.setOnClickListener {
             takePhoto()
         }
