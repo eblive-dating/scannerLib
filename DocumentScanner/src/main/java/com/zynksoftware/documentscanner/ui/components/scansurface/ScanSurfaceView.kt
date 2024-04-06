@@ -45,7 +45,7 @@ import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.roundToInt
 
-public class ScanSurfaceView : FrameLayout {
+internal class ScanSurfaceView : FrameLayout {
 
     companion object {
         private val TAG = ScanSurfaceView::class.simpleName

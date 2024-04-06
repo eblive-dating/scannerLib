@@ -25,7 +25,7 @@ import com.zynksoftware.documentscanner.R
 import com.zynksoftware.documentscanner.common.extensions.hide
 import com.zynksoftware.documentscanner.common.extensions.show
 
-abstract class BaseFragment : Fragment() {
+internal abstract class BaseFragment : Fragment() {
 
     fun showProgressBar() {
         view?.findViewById<RelativeLayout>(R.id.progressLayout)?.show()

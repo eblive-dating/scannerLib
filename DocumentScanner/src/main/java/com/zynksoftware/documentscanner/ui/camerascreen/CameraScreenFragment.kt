@@ -46,7 +46,7 @@ import java.io.File
 import java.io.FileNotFoundException
 
 
-public class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
+ internal class CameraScreenFragment: BaseFragment(), ScanSurfaceListener  {
 
     companion object {
         private val TAG = CameraScreenFragment::class.simpleName
